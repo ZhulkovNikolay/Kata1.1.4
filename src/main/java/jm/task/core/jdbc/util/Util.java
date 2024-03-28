@@ -22,13 +22,4 @@ public class Util {
         return connection;
     }
 
-    public void closeConnection() {
-        try {
-            connection.close();
-            System.out.println("Соединение с БД Закрыто!");
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
-        }
-    }
-
 }
